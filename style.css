@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.gallery-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+header .header-banner {
+    background-image: url("img/banner.jpg");
+    width: 90%;
+    aspect-ratio: 16 / 7;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    line-height: 70px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+header h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+header .logo {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0 20px 0;
+}
+
+header .logo hr {
+    display: none;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 16px 42px;
+}
+
+nav ul li a {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: rgb(23, 32, 41);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.about {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-content p {
+    width: 50%;
+    align-self: baseline;
+}
+
+.about-content img {
+    width: 45%;
+}
+
+.recipes-title {
+    display: none;
+}
+
+footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    background-color: rgb(23, 32, 41);
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 0px;
+}
+
+footer ul li {
+    display: block;
+    padding: 0 0 10px 0;
+}
+
+footer ul li p {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+footer ul li a {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-sm {
+    width: 32px;
+    float: right;
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.gallery-h2 {
+    font-family: "Cinzel", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding: 10px 10px 10px 0;
+    color: rgb(58, 56, 61);
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.gallery-image {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    flex-basis: 300px;
+}
+
+.post-header {
+        /*kujundus*/
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 9px #111;
+
+        /*positsioneerimine*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 950px) {
+    header .header-banner {
+        height: calc(100vh - 400px);
+        aspect-ratio: auto;
+    }
+
+    header h1 a {
+        font-size: 80px;
+    }
+
+    header h2 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 300px;
+    }
+    header nav ul li {
+        padding: 16px 0;
+    }
+}
+
+@media only screen and (max-width: 949px) {
+
+    header h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    header h2 {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    header .logo hr {
+        display: block;
+        width: 55%;
+        border: 0;
+        border-top: 3px solid rgb(119, 119, 119);
+        margin: 10px auto 5px auto;
+    }
+
+    header .header-banner {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 7;
+    }
+
+    header nav ul li {
+        padding: 16px 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .about {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .about-content {
+        display: block;
+    }
+
+    .about .gallery-h2 {
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+    .about-content p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-content img {
+        display: none;
+    }
+
+    .recipes-title {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .gallery-image img {
+        width: min(300px, 80vw);
+        height: min(300px, 80vw);
+    }
+
+    footer {
+        width: calc(100% - 80px);
+        padding: 40px;
+    }
+}
